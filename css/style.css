@@ -1,0 +1,182 @@
+:root {
+  --text-color-quest: rgba(102, 102, 102, 1);
+  --text-color-white: rgba(255, 255, 255, 1);
+  --links-acess: #111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  width: 1440px;
+  height: 1024px;
+  flex-shrink: 0;
+}
+
+#content {
+  width: 715px;
+  height: 853;
+  margin: 93px 362px 78px 363px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+
+  color: #333;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/*Caixa de texto de criação de conta ou ir para login*/
+#box-create {
+  width: 304px;
+  height: 78px;
+}
+
+#box-create p {
+  font-family: Poppins;
+}
+#create {
+  font-size: 32px;
+  font-weight: 500;
+  gap: 2px;
+}
+
+#faca-login {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#faca-login a {
+  color: var(--links-acess);
+  text-decoration-line: underline;
+}
+
+ul {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color-quest);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+ul li {
+  gap: 4px;
+}
+
+ul li p {
+  text-align: left;
+}
+
+ul p a {
+  color: var(--links-acess);
+  text-decoration-line: underline;
+}
+
+input {
+  color: rgba(102, 102, 102, 0.6);
+  padding: 15px 420px 17px 24px;
+}
+
+.erromensagem {
+  color: red;
+  font-size: 10px;
+  opacity: 0;
+}
+
+
+#username {
+  display: flex;
+  border-radius: 12px;
+  border: 1px solid rgba(102, 102, 102, 0.35);
+  height: 56px;
+  width: 715px;
+}
+
+#useremail {
+  display: flex;
+  border-radius: 12px;
+  border: 1px solid rgba(102, 102, 102, 0.35);
+  height: 56px;
+  width: 715px;
+}
+
+#usersenha {
+  display: flex;
+  border-radius: 12px;
+  border: 1px solid rgba(102, 102, 102, 0.35);
+  height: 56px;
+  width: 715px;
+}
+
+button {
+  font-size: 22px;
+  color: white;
+  background: var(--links-acess);
+  border-radius: 40px;
+  opacity: 0.25;
+  display: flex;
+  width: 715px;
+  height: 64px;
+  padding: 15px 0px 16px 0px;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #000000;
+  opacity: 0.75;
+}
+
+#loginforothers {
+  display: flex;
+  flex-direction: line;
+  align-items: flex-start;
+  gap: 16px;
+}
+#loginforothers label {
+  border-radius: 40px;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: line;
+  width: 227px;
+  height: 64px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.4s;
+}
+
+#loginforothers label:hover {
+  background: #111;
+  opacity: 0.20;
+}
+
+#oucom {
+  display: flex;
+  font-family: Avenir;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: right;
+  padding: 32px 0px 0px 0px;
+}
+
+svg {
+  gap: 16px;
+}
+
