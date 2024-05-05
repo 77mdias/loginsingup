@@ -146,7 +146,14 @@ button:hover {
   flex-direction: line;
   align-items: flex-start;
   gap: 16px;
+  margin-top: -24px;
 }
+
+#loginforothers a {
+  text-decoration: none;
+  color: #333;
+}
+
 #loginforothers label {
   border-radius: 40px;
   border: 1px solid #333;
@@ -163,7 +170,14 @@ button:hover {
 
 #loginforothers label:hover {
   background: #111;
-  opacity: 0.20;
+  opacity: 0.70;
+  color: #fff;
+}
+
+#loginforothers label ion-icon {
+  height: 32px;
+  width: 32px;
+  margin-right: 16px;
 }
 
 #oucom {
