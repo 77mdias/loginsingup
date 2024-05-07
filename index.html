@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
   </head>
-  <script src="/_js/script.js"></script>
   <body>
+  <!-- OK AQUI É UM COMENTÁRIO -->
     <div id="content">
       <div id="box-create">
         <p id="create">Crie uma conta</p>
         <p id="faca-login">Já tem uma conta? Faça <a href="login.html">Log in</a></p>
       </div>
-      <ul>
+      <ul id="form">
         <li>
           <p id="textusername">Como devemos chamá-lo?</p>
           <div class="caixa">
@@ -22,10 +22,11 @@
               type="text"
               id="username"
               placeholder="Digite seu nome de perfil"
+              minlength="3"
               required
             />
           </div>
-          <p class="erromensagem">Erro de preenchimento</p>
+          <p id="errorname">Erro de preenchimento</p>
         </li>
 
         <li>
@@ -38,7 +39,7 @@
               required
             />
           </div>
-          <p class="erromensagem">Erro de preenchimento</p>
+          <p id="errormail">Erro de preenchimento</p>
         </li>
 
         <li>
@@ -63,7 +64,7 @@
         </p>
 
         <div id="button-create">
-          <button onclick="cadastrar()">Crie a conta</button>
+          <button id="button-cad" type="submit">Crie a conta</button>
         </div>
         <p id="oucom">OU continue com</p>
 
@@ -95,6 +96,7 @@
 
 
     </div>
+    <script src="./js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>

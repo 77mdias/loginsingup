@@ -1,13 +1,25 @@
-let username = document.querySelector ('#username')
-let useremail = document.querySelector ('#useremail')
-let erromensagem = document.querySelector ('.erromensagem')
+//VARIAVEIS GLOBAIS
+var cadastro = document.querySelector('#button-cad')
+var error_name = document.querySelector('p#errorname')
+var error_email = document.querySelector('p#errormail')
+var inputName = document.querySelector('input#username')
+var inputEmail = document.querySelector('input#useremail')
+var inputSenha = document.querySelector('input#usersenha')
 
 
-username.addEventListener ('keyup', () => {
-  if(username.value.length <= 2){
-    erromensagem.setAttribute ('style', 'color: red', 'opacity: 1')
-    erromensagem.innerHTML = '<strong> Nome *Insira no mínimo 3 caracteres</strong>'
+// FUNÇÃO - botão de ''crie a conta''
+cadastro.addEventListener('click', cadastrar)
+
+function cadastrar() {
+  cadastro.innerText = 'Clickou!'
+
+  if (inputName.value.length < 3){
+    error_name.style.opacity = 1
+    error_name.innerHTML = `Por favor digite no mínimo 3 caracteres`
   } else {
-      erromensagem.setAttribute('style', 'opacity: 0')
-    }
-  })
+    error_name.style.opacity = 0
+  } if (inputEmail.value.length < 3) {
+    error_email.style.opacity = 1
+    error_email.innerHTML = `Por favor digite no mínimo 3 caracteres`
+  }
+}
