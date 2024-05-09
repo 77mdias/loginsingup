@@ -14,49 +14,48 @@
         <p id="create">Crie uma conta</p>
         <p id="faca-login">Já tem uma conta? Faça <a href="login.html">Log in</a></p>
       </div>
-      <ul id="form">
-        <li>
+      <form id="form">
+        <div>
           <p id="textusername">Como devemos chamá-lo?</p>
           <div class="caixa">
             <input
               type="text"
-              id="username"
+              class="inputError"
               placeholder="Digite seu nome de perfil"
-              minlength="3"
-              required
+              oninput="userValidate()"
             />
           </div>
-          <p id="errorname">Erro de preenchimento</p>
-        </li>
+          <p class="errorMSG">Por favor digite no mínimo 8 caracteres</p>
+        </div>
 
-        <li>
+        <div>
           <p>Qual seu email?</p>
           <div class="caixa">
             <input
               type="text"
-              id="useremail"
+              class="inputError"
               placeholder="Digite seu endereço de Email"
-              required
+              oninput="emailValidate()"
             />
           </div>
-          <p id="errormail">Erro de preenchimento</p>
-        </li>
+          <p class="errorMSG">Erro de preenchimento! Digite um email válido.</p>
+        </div>
 
-        <li>
+        <div>
           <p>Crie a senha</p>
           <div class="caixa">
               <input
                 type="password"
-                id="usersenha"
+                class="inputError"
                 placeholder="Digite sua senha"
-                required
+                oninput="passwordValidate()"
               />
           </div>
           <p id="errorpassword" style="font-size: 12px; opacity: 0.76; ">
             Use 8 ou mais caracteres com uma mistura de letras, números e
             símbolos
           </p>
-        </li>
+        </div>
 
         <p>
           By creating an account, you agree to the
@@ -66,6 +65,7 @@
         <div id="button-create">
           <button id="button-cad" type="submit">Crie a conta</button>
         </div>
+        
         <p id="oucom">OU continue com</p>
 
         <div id="loginforothers">
@@ -92,8 +92,7 @@
 
         </div>
 
-      </ul>
-
+      </form>
 
     </div>
     <script src="./js/script.js"></script>
