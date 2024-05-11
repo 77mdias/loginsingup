@@ -8,11 +8,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
-  background-color: rgba(235, 214, 177, 0.411) ;
+  background-color: rgba(235, 214, 177, 0.411);
   position: absolute;
   left: 30%;
   flex-shrink: 0;
@@ -20,6 +19,7 @@ body {
 
 #content {
   width: 100%;
+  max-width: 608px;
   height: 853;
   margin: 20px 0px 28px 0px;
   margin-left: 0;
@@ -98,7 +98,6 @@ input {
   display: none;
 }
 
-
 .inputError {
   display: flex;
   border-radius: 12px;
@@ -106,7 +105,6 @@ input {
   height: 56px;
   width: 100%;
 }
-
 
 button {
   font-size: 22px;
@@ -146,7 +144,7 @@ button:hover {
   border-radius: 40px;
   border: 1px solid #333;
   display: flex;
-  width: 227px;
+  width: 200px;
   height: 64px;
   background: #fff;
   justify-content: center;
@@ -157,7 +155,7 @@ button:hover {
 
 #loginforothers label:hover {
   background: #111;
-  opacity: 0.70;
+  opacity: 0.7;
   color: #fff;
 }
 
@@ -180,7 +178,6 @@ button:hover {
 svg {
   gap: 16px;
 }
-
 
 /*MEDIA É UTILIZADO PARA RESPONSIVIDADE*/
 @media screen and (max-width: 1120px) {
@@ -214,5 +211,9 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #loginforothers label {
+    width: 350px;
   }
 }

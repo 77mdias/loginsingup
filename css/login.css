@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +10,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 1px;
-  background-color: rgba(235, 214, 177, 0.411) ;
+  background-color: rgba(235, 214, 177, 0.411);
 }
 
 #container {
@@ -47,10 +45,10 @@ body {
 .buttonwith {
   border-radius: 40px;
   border: 1px solid #333;
-  background: #FFF;
+  background: #fff;
   display: flex;
   width: 100%;
-  height: 64px; 
+  height: 64px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -60,7 +58,7 @@ body {
 .buttonwith:hover {
   background-color: #111;
   opacity: 0.7;
-  color: #FFF;
+  color: #fff;
 }
 
 .boxwith {
@@ -116,7 +114,8 @@ button {
   font-size: 16px;
 }
 
-.boxlogin p, a{
+.boxlogin p,
+a {
   font-weight: 400;
 }
 
@@ -140,7 +139,8 @@ button {
   align-self: stretch;
 }
 
-input#cSenha, input#cMail {
+input#cSenha,
+input#cMail {
   border-radius: 12px;
   border: 1px solid rgba(102, 102, 102, 0.35);
   height: 56px;
@@ -148,7 +148,8 @@ input#cSenha, input#cMail {
   padding-left: 20px;
 }
 
-input#cSenha::placeholder, input#cMail::placeholder{
+input#cSenha::placeholder,
+input#cMail::placeholder {
   color: rgba(102, 102, 102, 0.45);
 }
 
@@ -172,13 +173,13 @@ input#cSenha::placeholder, input#cMail::placeholder{
   opacity: 0.5;
   background: #333;
   width: 100%;
-  height: 64px; 
-  color: #FFF;
+  height: 64px;
+  color: #fff;
   font-size: 22px;
 }
 
 #login-button:hover {
-  background: rgba(0,0,0, 1);
+  background: rgba(0, 0, 0, 1);
   opacity: 1;
 }
 
@@ -202,11 +203,10 @@ button#singup-button {
 }
 
 button#singup-button:hover {
-  color: #FFF;
-  background-color: rgba(0,0,0, 1);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 1);
   opacity: 1;
 }
-
 
 @media (max-width: 720px) {
   div#container {
