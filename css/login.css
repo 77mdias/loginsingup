@@ -140,8 +140,7 @@ a {
   align-self: stretch;
 }
 
-input#cSenha,
-input#cMail {
+input.inputLogin {
   border-radius: 12px;
   border: 1px solid rgba(102, 102, 102, 0.35);
   height: 56px;
@@ -149,8 +148,7 @@ input#cMail {
   padding-left: 20px;
 }
 
-input#cSenha::placeholder,
-input#cMail::placeholder {
+input.inputLogin::placeholder {
   color: rgba(102, 102, 102, 0.45);
 }
 
