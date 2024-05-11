@@ -16,7 +16,7 @@ form.addEventListener("submit", (event) => {
 })
 
 
-//O QUE VAI ACONTECER QUANDO O CAMPO ESTIVER EM ERRO. OU SEJA (NESSE CASO: INPUT(MINHA CAIXA DE INPUT) = uma borda em vermelho com 2px e meu ERRORS(MEU TEXTO DE ERRO) = um display block dando visibilidade dele ao site)
+//O QUE VAI ACONTECER QUANDO O CAMPO ESTIVER EM ERRO
 function setERROR(index) {
   input[index].style.border = '2px solid red'
   errors[index].style.display = 'block'

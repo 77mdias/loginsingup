@@ -181,6 +181,8 @@ svg {
   gap: 16px;
 }
 
+
+/*MEDIA É UTILIZADO PARA RESPONSIVIDADE*/
 @media screen and (max-width: 1120px) {
   body {
     margin: auto;
