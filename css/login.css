@@ -113,10 +113,10 @@ button {
   align-items: flex-start;
   width: ;
   gap: 4px;
+  font-size: 16px;
 }
 
 .boxlogin p, a{
-  font-size: 16px;
   font-weight: 400;
 }
 
