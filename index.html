@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro</title>
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-  <!-- OK AQUI É UM COMENTÁRIO -->
+    <!-- OK AQUI É UM COMENTÁRIO -->
     <div id="content">
       <!-- SEÇÃO/DIV CABEÇALHO-->
       <div id="box-create">
         <p id="create">Crie uma conta</p>
-        <p id="faca-login">Já tem uma conta? Faça <a href="login.html">Log in</a></p>
+        <p id="faca-login">
+          Já tem uma conta? Faça <a href="login.html">Log in</a>
+        </p>
       </div>
       <!--FORMULÁRIO PARA ENVIO-->
       <form id="form">
@@ -35,7 +40,7 @@
           <p>Qual seu email?</p>
           <div class="caixa">
             <input
-              type="text"
+              type="email"
               class="inputError"
               placeholder="Digite seu endereço de Email"
               oninput="emailValidate()"
@@ -47,14 +52,14 @@
         <div>
           <p>Crie a senha</p>
           <div class="caixa">
-              <input
-                type="password"
-                class="inputError"
-                placeholder="Digite sua senha"
-                oninput="passwordValidate()"
-              />
+            <input
+              type="password"
+              class="inputError"
+              placeholder="Digite sua senha"
+              oninput="passwordValidate()"
+            />
           </div>
-          <p id="errorpassword" style="font-size: 12px; opacity: 0.76; ">
+          <p id="errorpassword" style="font-size: 12px; opacity: 0.76">
             Use 8 ou mais caracteres com uma mistura de letras, números e
             símbolos
           </p>
@@ -87,21 +92,22 @@
           </a>
           <!--VIA APPLE-->
           <a href="" target="">
-            <label for="Apple" class="buttonwith"
-              >
+            <label for="Apple" class="buttonwith">
               <ion-icon name="logo-apple"></ion-icon>
               Apple
             </label>
           </a>
-
-
         </div>
-
       </form>
-
     </div>
     <script src="./js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

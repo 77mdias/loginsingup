@@ -50,6 +50,9 @@
             name="tMail"
             class="inputLogin"
             placeholder="Digite seu email ou username"
+            required
+            aria-required="true"
+            aria-label="Campo de nome ou email"
           />
         </div>
         <div class="boxlogin">
@@ -59,10 +62,18 @@
             name="tSenha"
             class="inputLogin"
             placeholder="Digite sua senha"
+            required
+            aria-required="true"
+            aria-label="Campo de Senha"
           />
           <a id="pass-change" href="">Esqueceu sua senha?</a>
           <label for="iCheck">
-            <input type="checkbox" name="nCheck" id="iCheck" />
+            <input
+              type="checkbox"
+              name="nCheck"
+              id="iCheck"
+              aria-label="Lembrar-me"
+            />
             Lembre de mim
           </label>
         </div>
